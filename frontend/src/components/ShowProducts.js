@@ -38,7 +38,7 @@ const ShowProducts = () => {
           </tr>
         </thead>
         <tbody>
-          { products.map( (product) => {
+          { products.map( (product) => (
             <tr key={product.id}>
               <td> {product.description} </td>
               <td> {product.price} </td>
@@ -48,7 +48,7 @@ const ShowProducts = () => {
                 <button onClick={ ()=>deleteProduct(product.id) } className='btn btn-danger'>Delete</button>
               </td>
             </tr>
-          }) }
+          )) }
         </tbody>
       </table>
     </div>
